@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Encuesta de Atención</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Encuesta de Atención</h1>
+    <form id="formulario-encuesta" action="registrar_encuesta.php" method="POST">
+        <input type="hidden" id="cliente_id" name="cliente_id" value="{ID_DEL_CLIENTE}">
+        <input type="hidden" id="dependiente_id" name="dependiente_id" value="{ID_DEL_DEPENDIENTE}">
+        <label for="puntuacion">Puntuación:</label>
+        <select id="puntuacion" name="puntuacion" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" name="comentarios"></textarea>
+        <button type="submit">Enviar Encuesta</button>
+    </form>
+</body>
+</html>
